@@ -20,13 +20,24 @@ public class MinValue {
             arr[i] = scanner.nextInt();
         }
 
-        // Find max value
+
+        System.out.println("Min value = " + minValue(arr));
+
+        // Find min value
+//        int min = arr[0];
+//        for (int i = 1; i < arr.length; i++) {
+//            if (arr[i] < min)
+//                min = arr[i];
+//        }
+//        System.out.println("Min value = " + min);
+    }
+    public static int minValue(int[] arr){
         int min = arr[0];
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++){
             if (arr[i] < min)
                 min = arr[i];
         }
-        System.out.println("Min value = " + min);
+        return min;
     }
 }
 
